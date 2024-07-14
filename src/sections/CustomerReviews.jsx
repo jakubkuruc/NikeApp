@@ -1,4 +1,5 @@
 import ReviewCard from "../components/ReviewCard"
+import { reviews } from "../constants"
 
 const CustomerReviews = () => {
     return (
@@ -20,7 +21,7 @@ const CustomerReviews = () => {
                 {reviews.map((review) => (
                     <ReviewCard
                     key={review.customerName}
-                    imgUrl={review.imgURL}
+                    imgURL={review.imgURL}
                     customerName={review.customerName}
                     rating={review.rating}
                     feedback={review.feedback}
